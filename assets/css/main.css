@@ -1,0 +1,52 @@
+section {
+    text-align: center;
+    padding: 10px;
+    overflow: auto;
+    line-height: 1.6;
+}
+
+.path-node {
+    background-color: yellow;
+    color: black;
+}
+
+.goal, .root {
+    color: black;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    background-color: aquamarine;
+}
+
+.goal:hover::before, .root:hover::before  {
+    background-color: aquamarine;
+    padding: 10px;
+    content: "Prey";
+    position: absolute;
+    top: -50px;
+    left: -20px;
+}
+
+.goal:hover::before{
+    content: "Prey";
+}
+
+.root:hover::before {
+    content: "Hound";
+}
+
+.code-hunt {
+    background-color: #904200;
+    color: #ffffff;
+}
+
+.sample-1 {
+    background-color: #233490;
+    color: #ffffff;
+}
+
+.sample-2 {
+    background-color: #15901b;
+    color: #ffffff;
+}
+
